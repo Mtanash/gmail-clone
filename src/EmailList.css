@@ -1,0 +1,65 @@
+.emailList {
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: grey;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.icons > *,
+.icons > div > * {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.body__header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.bodyHeaderIcon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-width: 0 !important;
+}
+
+.bodyHeaderIcon:hover {
+  background-color: #eee;
+}
+
+.bodyHeaderIcon.active {
+  border-width: 3px !important;
+}
+
+.bodyHeaderIcon__icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 15px;
+  color: grey;
+}
+
+.bodyHeaderIcon.active .bodyHeaderIcon__icon {
+  color: inherit;
+}
+
+.bodyHeaderIcon > p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.bodyHeaderIcon.active > p {
+  color: inherit;
+}
